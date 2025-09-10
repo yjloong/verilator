@@ -107,7 +107,7 @@ int main(int argc, char** argv) {
                   " owide=%x_%08x_%08x\n",
                   contextp->time(), top->clk, top->reset_l, top->in_quad, top->out_quad,
                   top->out_wide[2], top->out_wide[1], top->out_wide[0]);
-#endif                  
+#endif
     }
 
     // Final model cleanup
