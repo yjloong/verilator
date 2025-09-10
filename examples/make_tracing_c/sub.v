@@ -22,7 +22,7 @@ module sub
     end
     else begin
       count_c <= count_c + 1;
-      if (count_c >= 3) begin
+      if (count_c >= 5000000) begin
         // This write is a magic value the Makefile uses to make sure the
         // test completes successfully.
         $write("*-* All Finished *-*\n");
@@ -33,10 +33,10 @@ module sub
 
   // An example assertion
   always_ff @(posedge clk) begin
-    AssertionExample : assert (!reset_l || count_c < 100);
+    AssertionExample : assert (!reset_l || count_c < 10000000);
   end
 
   // And example coverage analysis
-  cover property (@(posedge clk) count_c == 3);
+  cover property (@(posedge clk) count_c == 5000000);
 
 endmodule

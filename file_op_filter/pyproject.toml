@@ -1,0 +1,17 @@
+[project]
+name = "file-op-filter"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yang Jialong",email = "z_bajeer@yeah.net"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "verilog-vcd (>=1.11,<2.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

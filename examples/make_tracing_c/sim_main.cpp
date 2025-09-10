@@ -101,11 +101,13 @@ int main(int argc, char** argv) {
         // eval_end_step() on each. See the manual.)
         top->eval();
 
+#if 0        
         // Read outputs
         VL_PRINTF("[%" PRId64 "] clk=%x rstl=%x iquad=%" PRIx64 " -> oquad=%" PRIx64
                   " owide=%x_%08x_%08x\n",
                   contextp->time(), top->clk, top->reset_l, top->in_quad, top->out_quad,
                   top->out_wide[2], top->out_wide[1], top->out_wide[0]);
+#endif                  
     }
 
     // Final model cleanup
